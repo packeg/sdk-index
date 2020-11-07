@@ -63,11 +63,12 @@ def generate_and_import_project(json_path, mcu_config_path):
     cmd_pre = r"/rt-thread/eclipse/eclipse -nosplash --launcher.suppressErrors "\
               r"-application org.eclipse.cdt.managedbuilder.core.headlessbuild " \
               r"-data '/rt-thread/eclipse/workspace'"
-    cmd = cmd_pre + ' -importAll "file:/rt-thread/workspace" 2> /dev/null'
-
+    cmd = cmd_pre + ' -importAll "file:/rt-thread/workspace"'
+    os.system("ls -al /rt-thread/workspace")
+    os.system("ls -al /rt-thread/workspace/template_rt_thread_full_latest")
     logging.info("Project import start.")
     begin_time = time.time()
-    subprocess.call(cmd, shell=True)
+    os.system(cmd)
     logging.info("Project import end. time consuming : {0}.".format(time.time() - begin_time))
 
 
