@@ -37,6 +37,7 @@ jobs:
             python3 -m pip install requests wheel jsonschema
             ps
             echo "$(tty)"
+            tty --version
         - name: Config Github SSH
           if: ${{ github.ref == 'refs/heads/master' }}
           run: |
