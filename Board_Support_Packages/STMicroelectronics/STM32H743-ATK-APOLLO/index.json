@@ -11,13 +11,6 @@
             "description": "first release",
             "size": "27 MB",
             "url": "https://github.com/RT-Thread-Studio/sdk-bsp-stm32h743-atk-apollo/archive/1.0.0.zip"
-        },
-        {
-            "version": "1.0.2",
-            "date": "2020-11-09",
-            "description": "first release",
-            "size": "27 MB",
-            "url": "https://github.com/thread-liu/sdk-bsp-stm32h743-atk-apollo/archive/1.0.2.zip"
         }
     ]
 }
